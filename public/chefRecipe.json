@@ -1,0 +1,50 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Chef Maria's Enchiladas Verdes",
+        "image": "./../src/assets/images/ella-olsson-4dQiaWKiL-Y-unsplash.jpg",
+        "rating": 4.8,
+        "ingredients": [
+          "12 corn tortillas",
+          "2 cups cooked and shredded chicken",
+          "2 cups tomatillo salsa",
+          "1/2 cup sour cream",
+          "2 cups shredded Monterey Jack cheese",
+          "Salt and pepper, to taste"
+        ],
+        "method": "To make Enchiladas Verdes, mix shredded chicken, sour cream, and Monterey Jack cheese, then wrap in tortillas and cover with tomatillo salsa and more cheese. Bake for 20-25 minutes at 350°F."
+      },
+      {
+        "id": 2,
+        "name": "Chef Juan's Carne Asada Tacos",
+        "image": "./../src/assets/images/hybrid-storytellers-2M9-LTrpxJw-unsplash.jpg",
+        "rating": 4.7,
+        "ingredients": [
+          "1 lb flank steak",
+          "2 limes, juiced",
+          "1/4 cup soy sauce",
+          "1/4 cup olive oil",
+          "1 tsp cumin",
+          "Salt and pepper, to taste"
+        ],
+        "method": "For Carne Asada Tacos, marinate flank steak in lime juice, soy sauce, and spices, then grill and let rest before slicing. Serve with warmed tortillas, onion, and cilantro."
+      },
+      {
+        "id": 3,
+        "name": "Chef Luis's Chiles Rellenos",
+        "image": "./../src/assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg",
+        "rating": 4.9,
+        "ingredients": [
+          "6 poblano peppers",
+          "1 lb ground beef",
+          "1 cup cooked rice",
+          "1 cup shredded cheddar cheese",
+          "2 cloves garlic, minced",
+          "1/2 cup chopped onion"
+        ],
+        "method": "To make Stuffed Poblano Peppers, roast and peel poblano peppers, then stuff with a mixture of ground beef, cooked rice, cheese, garlic, onion, salt, and pepper. Pour tomato sauce over peppers and bake at 350°F for 30-35 minutes."
+      }
+    ]
+  }
+  
