@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+
 
 const Header = () => {
 
@@ -11,6 +12,7 @@ const Header = () => {
         .then()
         .catch(error => console.log(error))
     }
+
 
     return (
         <Navbar expand="lg" bg='dark' variant='dark'>
@@ -23,9 +25,9 @@ const Header = () => {
                         className="mx-auto my-4 d-flex align-items-center gap-4"
                         navbarScroll
                     >
-                        <Link className='text-decoration-none text-white' to='/'>Home</Link>
-                        <Link className='text-decoration-none text-white' to='/about-us'>About Us</Link>
-                        <Link className='text-decoration-none text-white' to='/blog'>Blog</Link>
+                        <NavLink className='text-decoration-none nav-col-cus' activeClassName="active" to='/'>Home</NavLink>
+                        <NavLink className='text-decoration-none nav-col-cus' activeClassName="active" to='/about-us'>About Us</NavLink>
+                        <NavLink className='text-decoration-none nav-col-cus'  activeClassName="active" to='/blog'>Blog</NavLink>
                     </Nav>
                     {
                         user ?
