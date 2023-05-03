@@ -5,6 +5,7 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import ChefDetails from "../pages/ChefDetails/ChefDetails";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Login/Register";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'chef/:chefId',
-                element: <ChefDetails></ChefDetails>,
+                element: <PrivateRoute><ChefDetails></ChefDetails></PrivateRoute>,
                 loader: ({params}) => fetch(`https://savor-maxican-server-zubayer22.vercel.app/chef/${params.chefId}`)
             },
             {

@@ -10,7 +10,7 @@ const ChefRecipe = () => {
     const [isButtonClicked, setIsButtonClicked] = useState([]);
 
     useEffect(() => {
-        fetch('/public/chefRecipe.json')
+        fetch('/chefRecipe.json')
             .then(res => res.json())
             .then(data => {
                 setRecipes(data.recipes);
