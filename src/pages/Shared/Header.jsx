@@ -25,6 +25,7 @@ const Header = () => {
                     >
                         <Link className='text-decoration-none text-white' to='/'>Home</Link>
                         <Link className='text-decoration-none text-white' to='/about-us'>About Us</Link>
+                        <Link className='text-decoration-none text-white' to='/blog'>Blog</Link>
                     </Nav>
                     {
                         user ?

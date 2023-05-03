@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "Chef Maria's Enchiladas Verdes",
-        "image": "./../src/assets/images/ella-olsson-4dQiaWKiL-Y-unsplash.jpg",
+        "image": "https://i.ibb.co/LZy4rZs/tai-s-captures-Ji-RSy0-Gfq-PA-unsplash-5ed121ee.jpg",
         "rating": 4.8,
         "ingredients": [
           "12 corn tortillas",
@@ -18,7 +18,7 @@
       {
         "id": 2,
         "name": "Chef Juan's Carne Asada Tacos",
-        "image": "./../src/assets/images/hybrid-storytellers-2M9-LTrpxJw-unsplash.jpg",
+        "image": "https://i.ibb.co/ZTjTyPK/hybrid-storytellers-2-M9-LTrpx-Jw-unsplash-587c7a8d.jpg",
         "rating": 4.7,
         "ingredients": [
           "1 lb flank steak",
@@ -33,7 +33,7 @@
       {
         "id": 3,
         "name": "Chef Luis's Chiles Rellenos",
-        "image": "./../src/assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg",
+        "image": "https://i.ibb.co/VYvjNc2/ella-olsson-4d-Qia-WKi-L-Y-unsplash-3985725f.jpg",
         "rating": 4.9,
         "ingredients": [
           "6 poblano peppers",
@@ -47,4 +47,3 @@
       }
     ]
   }
-  

@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Register = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, logOut } = useContext(AuthContext);
 
-    const[accepted, setAccepted] = useState(false);
+    const [accepted, setAccepted] = useState(false);
+
+    const navigate = useNavigate();
 
     const handleRegister = event => {
         event.preventDefault();
@@ -21,7 +23,9 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const createdUser = result.user;
-                console.log(createdUser)
+                console.log(createdUser);
+                logOut();
+                navigate('/login')
             })
             .catch(error => {
                 console.log(error)
@@ -55,7 +59,7 @@ const Register = () => {
                         <Form.Control type="password" name='password' placeholder="Password" required />
                     </Form.Group>
                     <Form.Group>
-                        <Form.Check onClick={handleAccepted} type="checkbox" name="accept" label={<>Accept <Link to='/terms'>Terms and Conditions</Link></>} />
+                        <Form.Check onClick={handleAccepted} type="checkbox" name="accept" label="Accept Terms and Conditions" />
                     </Form.Group>
                     <Button variant="primary" type="submit" disabled={!accepted}>
                         Register
@@ -65,9 +69,6 @@ const Register = () => {
                             Already have an account? <Link to='/login'>Login</Link>
                         </Form.Text>
                     </Form.Group>
-                    <Form.Text className='text-success'>
-
-                    </Form.Text>
                 </Form>
             </Container>
         </div>
