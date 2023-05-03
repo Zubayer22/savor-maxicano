@@ -34,7 +34,7 @@ const ChefRecipe = () => {
                     <Card>
                         <Card.Img variant="top" src={recipe.image} />
                         <Card.Body>
-                            <Card.Title>Chef Maria's Enchiladas Verdes</Card.Title>
+                            <Card.Title>{recipe.name}</Card.Title>
                             <p>Rating: <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> 4.8/5</p>
                             <h5>Ingredients</h5>
                             <Card.Text>

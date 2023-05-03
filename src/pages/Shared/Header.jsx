@@ -6,7 +6,8 @@ const Header = () => {
     return (
         <Navbar expand="lg" bg='dark' variant='dark'>
             <Container>
-                <Navbar.Brand href="#">Savor Maxican</Navbar.Brand>
+                <Navbar.Brand><Link className='text-decoration-none text-white' to='/'>Savor Maxican</Link></Navbar.Brand>
+                
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -16,7 +17,7 @@ const Header = () => {
                         <Link className='text-decoration-none text-white' to='/'>Home</Link>
                         <Link className='text-decoration-none text-white' to='/about-us'>About Us</Link>
                     </Nav>
-                    <Button>Login</Button>
+                    <Link to='/login'><Button>Login</Button></Link>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
