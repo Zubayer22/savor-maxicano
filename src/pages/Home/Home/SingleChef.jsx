@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { FaRegThumbsUp } from 'react-icons/fa';
-import { Link, useNavigate } from 'react-router-dom';
+import LazyLoad from 'react-lazy-load';
+import { useNavigate } from 'react-router-dom';
 
 const SingleChef = ({ chef }) => {
     const { id, name, picture, experience, recipes, likes } = chef;
@@ -9,7 +10,7 @@ const SingleChef = ({ chef }) => {
     return (
         <Col key={id}>
             <Card>
-                <Card.Img variant="top" src={picture} />
+                <LazyLoad><Card.Img variant="top" src={picture} /></LazyLoad>
                 <Card.Body>
                     <div className='d-flex justify-content-between'>
                         <Card.Title>{name}</Card.Title>

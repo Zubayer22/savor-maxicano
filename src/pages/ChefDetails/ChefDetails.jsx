@@ -3,6 +3,7 @@ import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { FaHandPointRight, FaRegThumbsUp } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import ChefRecipe from './ChefRecipe';
+import LazyLoad from 'react-lazy-load';
 
 const ChefDetails = () => {
     const { chefId } = useParams();
@@ -29,7 +30,7 @@ const ChefDetails = () => {
             ) : (
                 <Row className='d-flex align-items-center'>
                     <Col xs={12} md={6}>
-                        <img className='w-100' src={picture} alt='' />
+                        <LazyLoad><img className='w-100' src={picture} alt='' /></LazyLoad>
                     </Col>
                     <Col xs={12} md={6}>
                         <div className='d-flex justify-content-between'>
