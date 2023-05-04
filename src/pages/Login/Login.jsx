@@ -48,7 +48,8 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             setUser(user);
-            console.log(user)
+            // console.log(user)
+            navigate(from, { replace: true })
         })
         .catch(error => {
             console.log('error', error.message)
@@ -62,7 +63,8 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             setUser(user);
-            console.log(user)
+            // console.log(user)
+            navigate(from, { replace: true })
         })
         .catch(error => {
             console.log('error', error.message)
