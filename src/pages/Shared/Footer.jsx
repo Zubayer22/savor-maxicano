@@ -13,26 +13,26 @@ const Footer = () => {
                     </Col>
                     <Col xs={12} sm={6} md={2}>
                         <h5 className='text-white'>About</h5>
-                        <ul className='list-unstyled'>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                        <ul className='list-unstyled text-white'>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
                         </ul>
                     </Col>
                     <Col xs={12} sm={6} md={2}>
                         <h5 className='text-white'>Our Policy</h5>
-                        <ul  className='list-unstyled'>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Disclaimer</a></li>
+                        <ul className='list-unstyled text-white'>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
+                            <li>Disclaimer</li>
                         </ul>
                     </Col>
                     <Col xs={12} sm={6} md={4}>
                         <h5 className='text-white'>Newsletter</h5>
                         <Form className='mt-4'>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                
+
                                 <Form.Control type="email" placeholder="Enter email" />
                             </Form.Group>
 

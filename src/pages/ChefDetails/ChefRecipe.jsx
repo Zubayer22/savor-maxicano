@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import { FaStar } from 'react-icons/fa';
+
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -32,6 +34,7 @@ const ChefRecipe = () => {
             {recipes.map((recipe, index) => (
                 <Col xs={12} md={4} key={index}>
                     <Card>
+                        
                         <Card.Img variant="top" src={recipe.image} />
                         <Card.Body>
                             <Card.Title>{recipe.name}</Card.Title>

@@ -1,5 +1,5 @@
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -11,6 +11,8 @@ const Login = () => {
 
     const auth = getAuth(app);
     const { setUser, signIn } = useContext(AuthContext);
+
+    const [error, setError] = useState('');
 
     const navigate = useNavigate();
 
@@ -34,6 +36,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                setError(error.message)
             })
     }
 
@@ -65,6 +68,7 @@ const Login = () => {
             console.log('error', error.message)
         })
     }
+    
 
     return (
         <div>
@@ -88,8 +92,8 @@ const Login = () => {
                             Don't have an account? <Link to='/register'>Register</Link>
                         </Form.Text>
                     </Form.Group>
-                    <Form.Text className='text-success'>
-
+                    <Form.Text className='text-danger'>
+                        {error}
                     </Form.Text>
                 </Form>
                 <Button onClick={handleGoogleLogin} className='me-4 mt-4'><FaGoogle/> Sign In With Google</Button>

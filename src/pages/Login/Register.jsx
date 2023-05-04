@@ -3,10 +3,13 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
+
 const Register = () => {
     const { createUser, logOut } = useContext(AuthContext);
 
     const [accepted, setAccepted] = useState(false);
+
+    const [error, setError] = useState('');
 
     const navigate = useNavigate();
 
@@ -25,10 +28,11 @@ const Register = () => {
                 const createdUser = result.user;
                 console.log(createdUser);
                 logOut();
-                navigate('/login')
+                navigate('/login');
             })
             .catch(error => {
                 console.log(error)
+                setError(error.message)
             })
     }
 
@@ -65,6 +69,10 @@ const Register = () => {
                         Register
                     </Button>
                     <Form.Group>
+                        
+                        <Form.Text className='text-danger'>
+                            {error}
+                        </Form.Text><br/>
                         <Form.Text className='text-secondary'>
                             Already have an account? <Link to='/login'>Login</Link>
                         </Form.Text>

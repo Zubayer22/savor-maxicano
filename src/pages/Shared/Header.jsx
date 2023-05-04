@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
@@ -9,9 +9,15 @@ const Header = () => {
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
-        .then()
-        .catch(error => console.log(error))
+            .then()
+            .catch(error => console.log(error))
     }
+
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+            {user?.displayName}
+        </Tooltip>
+    );
 
 
     return (
@@ -27,13 +33,16 @@ const Header = () => {
                     >
                         <NavLink className='text-decoration-none nav-col-cus' activeClassName="active" to='/'>Home</NavLink>
                         <NavLink className='text-decoration-none nav-col-cus' activeClassName="active" to='/about-us'>About Us</NavLink>
-                        <NavLink className='text-decoration-none nav-col-cus'  activeClassName="active" to='/blog'>Blog</NavLink>
+                        <NavLink className='text-decoration-none nav-col-cus' activeClassName="active" to='/blog'>Blog</NavLink>
                     </Nav>
                     {
                         user ?
                             <div>
                                 <Button onClick={handleLogOut} variant="primary">Log Out</Button>
-                                <img style={{width: '35px'}} className='rounded-circle ms-3' title={user?.displayName} src={user?.photoURL} alt="" />
+
+                                <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}>
+                                    <img style={{ width: '35px' }} className='rounded-circle ms-3' src={user?.photoURL} alt="" />
+                                </OverlayTrigger>
                             </div>
                             :
                             <Link to="/login">
