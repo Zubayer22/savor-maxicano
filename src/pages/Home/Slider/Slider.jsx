@@ -46,7 +46,7 @@ export default function App() {
             >
                 <SwiperSlide>
                     <Container>
-                        <Row className='d-flex align-items-center'>
+                        <Row className='d-flex align-items-center flex-column-reverse flex-md-row'>
                             <Col xs={12} md={6}>
 
                                 <h1>Discover the Bold and Vibrant Flavors of Mexico with Savor Mexican</h1>
@@ -62,7 +62,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Container>
-                        <Row className='d-flex align-items-center'>
+                        <Row className='d-flex align-items-center flex-column-reverse flex-md-row'>
                             <Col xs={12} md={6}>
 
                                 <h1>Experience the True Taste of Mexico with Savor Mexican</h1>
@@ -77,7 +77,7 @@ export default function App() {
                     </Container>
                 </SwiperSlide>
                 <SwiperSlide><Container>
-                    <Row className='d-flex align-items-center'>
+                    <Row className='d-flex align-items-center flex-column-reverse flex-md-row'>
                         <Col xs={12} md={6}>
 
                             <h1>Unlock the Secrets of Mexican Cooking with Savor Mexican</h1>

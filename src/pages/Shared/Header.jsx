@@ -37,7 +37,7 @@ const Header = () => {
                     </Nav>
                     {
                         user ?
-                            <div>
+                            <div className='text-center'>
                                 <Button onClick={handleLogOut} variant="primary">Log Out</Button>
 
                                 <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}>
