@@ -49,7 +49,7 @@ export default function App() {
                         <Row className='d-flex align-items-center flex-column-reverse flex-md-row'>
                             <Col xs={12} md={6}>
 
-                                <h1>Discover the Bold and Vibrant Flavors of Mexico with Savor Mexican</h1>
+                                <h1 className='pt-4 pt-md-0'>Discover the Bold and Vibrant Flavors of Mexico with Savor Mexican</h1>
                                 <p>At Savor Mexican, we believe that cooking should be a fun and exciting adventure. With our easy-to-follow recipes and expert cooking tips, you can learn to create amazing Mexican dishes that will tantalize your taste buds and impress your family and friends. </p>
                                 <button className='btn btn-primary mb-4'>Show More</button>
 
@@ -65,7 +65,7 @@ export default function App() {
                         <Row className='d-flex align-items-center flex-column-reverse flex-md-row'>
                             <Col xs={12} md={6}>
 
-                                <h1>Experience the True Taste of Mexico with Savor Mexican</h1>
+                                <h1 className='pt-4 pt-md-0'>Experience the True Taste of Mexico with Savor Mexican</h1>
                                 <p>Are you ready to take your taste buds on a journey to Mexico? Look no further than Savor Mexican, where we specialize in bringing you the most authentic and delicious Mexican recipes. From the bold spices of chiles to the tangy sweetness of tropical fruits, our recipes capture the true essence of Mexican cuisine.</p>
                                 <button className='btn btn-primary mb-4'>Show More</button>
 
@@ -80,7 +80,7 @@ export default function App() {
                     <Row className='d-flex align-items-center flex-column-reverse flex-md-row'>
                         <Col xs={12} md={6}>
 
-                            <h1>Unlock the Secrets of Mexican Cooking with Savor Mexican</h1>
+                            <h1  className='pt-4 pt-md-0'>Unlock the Secrets of Mexican Cooking with Savor Mexican</h1>
                             <p>Our team of expert chefs has spent years studying and perfecting the art of Mexican cooking, and we're excited to share our knowledge with you. From mastering the perfect tortilla to creating complex spice blends, our recipes and cooking tips will give you the confidence and skills to create truly authentic Mexican dishes.</p>
                             <button className='btn btn-primary mb-4'>Show More</button>
 

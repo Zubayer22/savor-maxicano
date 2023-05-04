@@ -45,9 +45,11 @@ const Header = () => {
                                 </OverlayTrigger>
                             </div>
                             :
-                            <Link to="/login">
-                                <Button variant="primary">Log In</Button>
-                            </Link>
+                            <div className='text-center'>
+                                <Link to="/login">
+                                    <Button variant="primary">Log In</Button>
+                                </Link>
+                            </div>
                     }
                     {/* <Link to='/login'><Button>Login</Button></Link> */}
                 </Navbar.Collapse>
